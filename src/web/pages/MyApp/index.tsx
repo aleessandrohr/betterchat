@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 
 import useDarkMode from "use-dark-mode";
 
-import { Site } from "configs/site";
+import { SITE } from "configs/site";
 
 import { LayoutWrapper } from "web/layouts/wrapper";
 
@@ -21,7 +21,7 @@ export const MyApp = ({ Component, pageProps }: AppProps) => {
 	return (
 		<>
 			<Head>
-				<title>{Site.name}</title>
+				<title>{SITE.name}</title>
 			</Head>
 			<ThemeProvider theme={{ ...theme, darkMode }}>
 				<LayoutWrapper>

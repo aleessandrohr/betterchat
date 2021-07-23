@@ -1,3 +1,3 @@
-export const Site = {
+export const SITE = {
 	name: "BetterChat",
 };

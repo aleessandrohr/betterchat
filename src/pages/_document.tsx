@@ -11,7 +11,7 @@ import { ServerStyleSheet } from "styled-components";
 import enUSSystem from "assets/translations/en-US/common.json";
 import ptBRSystem from "assets/translations/pt-BR/common.json";
 
-import { Site } from "configs/site";
+import { SITE } from "configs/site";
 
 interface GetSystemInformationResult {
 	system: {
@@ -68,7 +68,7 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang={system.html.lang}>
 				<Head>
-					<meta name="og:site_name" content={Site.name} />
+					<meta name="og:SITE_name" content={SITE.name} />
 					<meta name="og:locale" content={system.html.head.ogLocale} />
 					<link
 						href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"

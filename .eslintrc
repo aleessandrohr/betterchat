@@ -19,6 +19,20 @@
 		"project": "tsconfig.json",
 		"sourceType": "module"
 	},
+	"overrides": [
+		{
+			"files": ["**/configs/*.ts"],
+			"rules": {
+				"@typescript-eslint/naming-convention": [
+					"error",
+					{
+						"selector": "variableLike",
+						"format": ["UPPER_CASE"]
+					}
+				]
+			}
+		}
+	],
 	"rules": {
 		"import-helpers/order-imports": [
 			"warn",
