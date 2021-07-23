@@ -1,1 +1,1 @@
-# betterchat
+# BetterChat
