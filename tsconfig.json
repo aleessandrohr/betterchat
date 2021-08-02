@@ -29,5 +29,5 @@
 		"next-i18next.config",
 		"next.config.js"
 	],
-	"files": ["src/types/themes.d.ts", "src/types/next-i18next.d.ts"]
+	"files": ["src/types/next-i18next.d.ts"]
 }

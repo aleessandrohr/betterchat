@@ -71,7 +71,7 @@ export default class MyDocument extends Document {
 					<meta name="og:SITE_name" content={SITE.name} />
 					<meta name="og:locale" content={system.html.head.ogLocale} />
 					<link
-						href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+						href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
 						rel="stylesheet"
 					/>
 				</Head>

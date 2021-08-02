@@ -1,3 +1,9 @@
 import { FCWithLayout } from "types/interfaces/layout";
 
-export const Home: FCWithLayout = () => <></>;
+import { Container, MainSection } from "./styles";
+
+export const Home: FCWithLayout = () => (
+	<Container>
+		<MainSection></MainSection>
+	</Container>
+);

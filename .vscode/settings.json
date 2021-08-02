@@ -51,11 +51,6 @@
 		"editor.defaultFormatter": null
 	},
 
-	// XML
-	"[xml]": {
-		"editor.defaultFormatter": "DotJoshJohnson.xml"
-	},
-
 	// =========== Plugins & Extensions General Config ===============
 
 	// GitLens
@@ -86,9 +81,13 @@
 	"cSpell.words": [
 		"Helvetica",
 		"Roboto",
+		"Swipeable",
 		"alessandroramos",
 		"betterchat",
+		"googleusercontent",
 		"nextjs",
-		"sonarjs"
+		"sonarjs",
+		"svgr",
+		"svgs"
 	]
 }

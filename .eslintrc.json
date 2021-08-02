@@ -8,8 +8,7 @@
 		"@techmmunity/eslint-config/nextjs",
 		"@techmmunity/eslint-config/typescript",
 		"@techmmunity/eslint-config/ts-react",
-		"@techmmunity/eslint-config/ts-nextjs",
-		"next"
+		"@techmmunity/eslint-config/ts-nextjs"
 	],
 	"parserOptions": {
 		"ecmaFeatures": {
@@ -19,20 +18,6 @@
 		"project": "tsconfig.json",
 		"sourceType": "module"
 	},
-	"overrides": [
-		{
-			"files": ["**/configs/*.ts"],
-			"rules": {
-				"@typescript-eslint/naming-convention": [
-					"error",
-					{
-						"selector": "variableLike",
-						"format": ["UPPER_CASE"]
-					}
-				]
-			}
-		}
-	],
 	"rules": {
 		"import-helpers/order-imports": [
 			"warn",
@@ -51,9 +36,8 @@
 					"/assets/",
 					"/configs/",
 					"/layouts/",
-					"/types/",
 					"/utils/",
-					"/themes/",
+					"/types/",
 					"/styles/",
 					["parent", "sibling", "index"]
 				],

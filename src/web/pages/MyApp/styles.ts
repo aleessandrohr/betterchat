@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 
 		&:focus-visible {
 			outline: 3px solid transparent;
-		 	box-shadow: 0 0 0 3px ${({ theme }) => theme.colors.secondary};
+		 	box-shadow: 0 0 0 3px var(--secondary);
 		}
   }
 
@@ -22,8 +22,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.secondary};
+    background: var(--background);
+    color: var(--secondary);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
   }
@@ -33,13 +33,13 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	a {
-		color: ${({ theme }) => theme.colors.secondary};
+		color: var(--secondary);
 		text-decoration: none;
 	}
 
 	button, input, textarea {
 		background: transparent;
-    color: ${({ theme }) => theme.colors.secondary};
+    color: var(--secondary);
 		font-size: 1.6rem;
 		border: transparent;
 	}
@@ -54,17 +54,50 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	::-webkit-scrollbar-track {
-		background: ${({ theme }) => theme.colors.scrollbarBackground};
+		background: var(--scrollbar-background);
 		border-radius: 4px;
 	}
 
 	::-webkit-scrollbar-thumb {
-		background: ${({ theme }) => theme.colors.scrollbar};
+		background: var(--scrollbar);
 		border-radius: 4px;
 	}
 
 	::-webkit-scrollbar-corner {
 		background: transparent;
+	}
+
+	:root {
+		--main: #056CF2;
+		--primary: #FFFFFF;
+		--secondary: #1B1F22;
+		--background: #FAFAFA;
+		--scrollbar: var(--main);
+		--scrollbar-background: var(--gray-100);
+		--shadow: #00000050;
+		--black: #000000;
+		--white: #FFFFFF;
+		--gray-800: #24282E;
+		--gray-600: #586068;
+		--gray-400: #6A727D;
+		--gray-100: #D8DCDD;
+		--google: #4285F4;
+		--page-max-width: 126rem;
+		--horizontal-padding: 2rem;
+	}
+
+	[data-theme='dark']  {
+		--primary: #1D1D1D;
+		--secondary: #E1E1E6;
+		--background: #181818;
+		--scrollbar: var(--main);
+		--scrollbar-background: var(--gray-100);
+		--black: #000000;
+		--white: #FFFFFF;
+		--gray-800: #C6C6C6;
+		--gray-600: #AFAFAF;
+		--gray-400: #6A727D;
+		--gray-100: #24282E;
 	}
 
 	@media (max-width: 768px) {

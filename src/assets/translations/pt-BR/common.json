@@ -6,5 +6,24 @@
 				"ogLocale": "pt_BR"
 			}
 		}
+	},
+	"components": {
+		"navBar": {
+			"components": {
+				"menu": {
+					"buttons": {
+						"login": "Entrar com o Google",
+						"logout": "Sair"
+					},
+					"switch": {
+						"text": "Tema escuro",
+						"ariaLabel": "Mudar tema"
+					}
+				}
+			},
+			"links": {
+				"home": "Início"
+			}
+		}
 	}
 }
