@@ -27,7 +27,8 @@
 		"**/*.ts",
 		"**/*.tsx",
 		"next-i18next.config",
-		"next.config.js"
+		"next.config.js",
+		"sitemap-generator.js"
 	],
 	"files": ["src/types/themes.d.ts", "src/types/next-i18next.d.ts"]
 }
