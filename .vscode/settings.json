@@ -51,11 +51,6 @@
 		"editor.defaultFormatter": null
 	},
 
-	// XML
-	"[xml]": {
-		"editor.defaultFormatter": "DotJoshJohnson.xml"
-	},
-
 	// =========== Plugins & Extensions General Config ===============
 
 	// GitLens
@@ -81,6 +76,38 @@
 		"enums": "typescript",
 		"interfaces": "typescript"
 	},
+
+	// colorize
+	"colorize.enable_search_variables": true,
+	"colorize.colorized_variables": ["CSS", "SASS"],
+	"colorize.languages": [
+		"css",
+		"sass",
+		"scss",
+		"javascript",
+		"typescript",
+		"xml"
+	],
+	"colorize.exclude": [
+		"**/.git",
+		"**/.svn",
+		"**/.hg",
+		"**/CVS",
+		"**/.DS_Store",
+		"**/.git",
+		"**/node_modules",
+		"**/bower_components",
+		"**/tmp",
+		"**/dist",
+		"**/tests"
+	],
+	"colorize.include": [
+		"**/*.css",
+		"**/*.scss",
+		"**/*.sass",
+		"**/*.js",
+		"**/*.ts"
+	],
 
 	// Code Spell Checker
 	"cSpell.words": [
