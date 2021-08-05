@@ -85,7 +85,9 @@
 		"sass",
 		"scss",
 		"javascript",
+		"javascriptreact",
 		"typescript",
+		"typescriptreact",
 		"xml"
 	],
 	"colorize.exclude": [
